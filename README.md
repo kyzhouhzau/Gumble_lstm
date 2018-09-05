@@ -56,5 +56,5 @@ $c_t = c_{t-1}*f_i+z_i*i_t$
 $o_t = o_{t}*tanh(c_t)$
 
 
-
+论文：Towards Binary-Valued Gates for Robust LSTM Training
 代码参考：https://github.com/zhuohan123/g2-lstm/blob/master/language-modeling/g2_lstm.py
