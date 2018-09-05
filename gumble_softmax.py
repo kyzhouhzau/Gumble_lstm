@@ -25,7 +25,7 @@ def Gumble(x,name=None,temperature=0.2):
         return gumble_softmax_sample(x,temperature)
 
 
-def main():
+def test():
     x = np.random.normal(size = [200,10]).astype(np.float32)
     w = tf.get_variable("zhou",[10,1000],initializer=tf.random_uniform_initializer())
     logits = tf.nn.sigmoid(tf.matmul(x,w))
@@ -60,4 +60,4 @@ def main():
 
 
 if __name__=="__main__":
-    main()
+    test()
