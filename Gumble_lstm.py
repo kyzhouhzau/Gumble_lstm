@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 @Author:zhoukaiyin
-@Time:2018/5/11
+@Time:2018/9/5
 """
 from gumble_softmax import Gumble
 from tensorflow.python.ops import math_ops
