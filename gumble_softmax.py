@@ -28,8 +28,8 @@ def Gumble(x,name=None,temperature=0.2):
 def test():
     x = np.random.normal(size = [200,10]).astype(np.float32)
     w = tf.get_variable("zhou",[10,1000],initializer=tf.random_uniform_initializer())
-    logits = tf.nn.sigmoid(tf.matmul(x,w))
-    # logits = Gumble(tf.matmul(x,w))
+    #logits = tf.nn.sigmoid(tf.matmul(x,w))
+    logits = Gumble(tf.matmul(x,w))
     # loss = tf.nn.softmax_cross_entropy_with_logits(logits=logits,labels=y)
     # train_step = tf.train.AdamOptimizer(0.01).minimize(loss)
     sess = tf.Session()
