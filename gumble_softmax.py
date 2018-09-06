@@ -51,9 +51,9 @@ def test():
         elif m>0.1 and m<0.9:
             count_2 += 1
 
-    print("0-0.1",count_0/len(result))
-    print("0.9-1",count_1/len(result))
-    print("0.1-0.9",count_2/len(result))
+    print("0-0.1之间的值有：",count_0/len(result))
+    print("0.9-1之间的值有",count_1/len(result))
+    print("0.1-0.9之间的值有",count_2/len(result))
 
 
 
