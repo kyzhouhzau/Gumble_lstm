@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 @Author:zhoukaiyin
+@Time:2018/9/5
 """
 import tensorflow as tf
 from tensorflow.python.framework import ops
