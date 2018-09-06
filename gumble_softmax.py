@@ -9,6 +9,7 @@ from tensorflow.python.framework import ops
 from tensorflow.python.ops import math_ops
 from tensorflow.python.ops import random_ops
 import numpy as np
+
 def sample_gumble(shape,eps=1e-20):
     U = random_ops.random_uniform(shape)
     part = math_ops.log(U+eps)-math_ops.log(1+eps-U)
@@ -24,7 +25,6 @@ def Gumble(x,name=None,temperature=0.2):
     with ops.name_scope(name, "Gumble", [x]):
         x = ops.convert_to_tensor(x, name="x")
         return gumble_softmax_sample(x,temperature)
-
 
 def test():
     x = np.random.normal(size = [200,10]).astype(np.float32)
@@ -55,10 +55,6 @@ def test():
     print("0-0.1之间的值有：",count_0/len(result))
     print("0.9-1之间的值有",count_1/len(result))
     print("0.1-0.9之间的值有",count_2/len(result))
-
-
-
-
 
 if __name__=="__main__":
     test()
