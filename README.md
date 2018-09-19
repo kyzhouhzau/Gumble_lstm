@@ -2,7 +2,7 @@
 
 ### 一、首先给出LSTM公式
 
-$i_t = \sigma(W_{xi}x_t + W_{hi}h_{t-1} + b_i),$
+$i_t = \sigma(W_{xi}x_t + W_{hi}h_{t-1} + b_i)$
 $f_t = \sigma(W_{xf}x_t + W_{hf}h_{t-1} + b_f)$
 $o_t = \sigma(W_{xo}x_t + W_{ho}h_{t-1} + b_o)$
 $z_i = tanh(W_{xz}x_t + W_{hz}h_{t-1} + b_z))$
@@ -24,8 +24,8 @@ $P(D_\alpha = 0)-(\tau/4)log(1/\varepsilon)\leqslant P(G(\alpha,\tau) \geqslant1
 $\sigma(x) = \frac{1}{1+e^{-x}}$
 则$\sigma^{-1}(x) = log\frac{x}{1-x}$
 
-$P(G(\alpha,\tau)\geqslant1-\varepsilon) $
-$ =P( \sigma(\frac{\alpha+logU-log(1-U)}{\tau})\geqslant 1-\varepsilon) $
+$P(G(\alpha,\tau)\geqslant1-\varepsilon)$
+$=P( \sigma(\frac{\alpha+logU-log(1-U)}{\tau})\geqslant 1-\varepsilon)$
 
 ###### 这里用的是逆哈函数，直接两边取逆函数，根据性质当原函数递增的时候，逆函数也递增。
 
