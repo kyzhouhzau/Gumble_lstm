@@ -1,5 +1,5 @@
 # Towards Binary-Valued Gates for Robust LSTM Training
-
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 ### 一、首先给出LSTM公式
 
 $i_t = \sigma(W_{xi}x_t + W_{hi}h_{t-1} + b_i)$
