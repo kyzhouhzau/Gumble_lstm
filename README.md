@@ -1,5 +1,6 @@
 
-!["picture1"](./)
+!["picture1"](./picture/20180919212622.png)
+!["picture2"](./picture/20180919212657.png)
 
 论文：Towards Binary-Valued Gates for Robust LSTM Training
 <br>
